@@ -6,6 +6,7 @@ module Eye
   class Notify
     class Hipchat < Eye::Notify::Custom
 
+      # require 'eye/notify/hipchat'
       # Eye.config do
       #   hipchat api_token: 'asdf', name: 'Eye', notify: true, color: 'red'
       #   contact :ops, :hipchat, 'ops-room'
