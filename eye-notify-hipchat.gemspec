@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ryan Schlesinger"]
   spec.email         = ["ryan@aceofsales.com"]
   spec.summary       = %q{Adds a hipchat notifier to eye}
+  spec.homepage      = 'https://github.com/aceofsales/eye-notify-hipchat'
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
