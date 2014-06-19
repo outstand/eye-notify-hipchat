@@ -14,7 +14,7 @@ module Eye
 
       param :api_token, String, true  # Required
       param :name, String, false, 'Eye'  # Not required, defaults to 'Eye'
-      param :notify, [TrueClass, FalseClass], false, true  # Not required, defaults to true
+      param :notify_room, [TrueClass, FalseClass], false, true  # Not required, defaults to true
       param :color, String, false, 'yellow', ['yellow', 'green', 'red', 'purple', 'gray', 'random']
 
       def execute
@@ -22,7 +22,7 @@ module Eye
         room_name = contact
 
         client = HipChat::Client.new(api_token, :api_version => 'v2')
-        client[room_name].send(name, message_body, notify: notify, color: color)
+        client[room_name].send(name, message_body, notify: notify_room, color: color)
       end
     end
   end
